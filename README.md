@@ -1,5 +1,13 @@
-Sample Implementation with JQUERY
+Sample Implementation with JQuery
 
+Add to header or footer
+
+```
+<script type='text/javascript' src='<?=$asset_server_base?>javascript/froogaloop.min.js<?=$cache_buster?>'></script>
+<script type='text/javascript' src='<?=$asset_server_base?>javascript/video.js<?=$cache_buster?>'></script>
+```
+
+Place anywhere appropriate
 ```
 $("#video_window").html('<a id="start_video_button" class="playvideo" data-ref="' + $(".media-thumbs").find("a:first-child").attr("data-ref") + '"></a>');
 
